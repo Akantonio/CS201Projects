@@ -1,5 +1,5 @@
 //main.cpp
-//Adrian Antonio & Robert Shidner
+//Adrian Antonio & Robert
 //4/16/2018
 //Final Project for CS201 spring
 
