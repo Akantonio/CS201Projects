@@ -7,23 +7,11 @@
 using std::cin;
 using std::cout;
 using std::endl;
-#include <map>
-using std::map;
-
-void charCount() {
-
-}
-
-map<char, int> key;
 
 int main() {
-	for (int i = 0; i < 26; i++) {
-		char temp = 'a' + i;
-		key[temp] = 1;
-	}
 	cout << "Hello, world!" << endl;
 
-	cout << key['a'] << key['A'] << endl;
+
 	while (cin.get() != '\n');
 	return 0;
 }
