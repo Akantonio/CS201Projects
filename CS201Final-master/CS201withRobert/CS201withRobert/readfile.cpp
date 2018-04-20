@@ -13,6 +13,7 @@ void openFile() {
 		myfile << "This is a line.\n";
 		myfile.close();
 		cout << "Success";
+	}
 	else {
 		cout << "Unable to open file";
 	}
