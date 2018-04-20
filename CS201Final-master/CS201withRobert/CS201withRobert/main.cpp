@@ -3,6 +3,8 @@
 //4/16/2018
 //Final Project for CS201 spring
 
+#include"readFile.h"
+
 #include<iostream>
 using std::cin;
 using std::cout;
@@ -35,6 +37,7 @@ int main() {
 	for (auto val : key) {
 		cout << val.first << " " << key[val.first] << endl;
 	}
+	openFile();
 	while (cin.get() != '\n');
 	return 0;
 }
