@@ -5,6 +5,11 @@
 using std::cout;
 #include<fstream>
 using std::ofstream;
+#include<string>
+using std::string;
+using std::getline;
+#include<sstream>
+using std::istringstream;
 
 void openFile();
 
