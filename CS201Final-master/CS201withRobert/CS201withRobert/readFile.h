@@ -5,12 +5,14 @@
 using std::cout;
 #include<fstream>
 using std::ofstream;
+using std::ifstream;
 #include<string>
 using std::string;
 using std::getline;
 #include<sstream>
 using std::istringstream;
 
-void openFile();
+void writeOnFile(string s);
+void decFile();
 
 #endif // !READFILE_H

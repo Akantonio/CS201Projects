@@ -32,12 +32,13 @@ int main() {
 		char temp = 'a' + i;
 		key[temp] = 0;
 	}
+
 	charCount("This is some text.", key);
 
 	for (auto val : key) {
 		cout << val.first << " " << key[val.first] << endl;
 	}
-	openFile();
+	decFile();
 	while (cin.get() != '\n');
 	return 0;
 }
