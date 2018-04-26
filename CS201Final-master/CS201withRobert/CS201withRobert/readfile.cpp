@@ -4,7 +4,7 @@
 //Reads a file to make use of it 
 
 #include"readFile.h"
-
+#include"encryption.h"
 
 
 void writeOnFile(string s) {
@@ -25,11 +25,13 @@ void writeOnFile(string s) {
 
 void decFile() {
 	string line;
+	string read;
 	ifstream myfile("example.txt");
 	if (myfile.is_open()) {
 		while (getline(myfile, line)) {
-			cout << line<<'\n';
+			read += line+"\n"; //Adds the next line into the string
 		}
+		cout << read << '\n';//checking to make sure it works
 		cout << "Success!";
 	}
 	else {

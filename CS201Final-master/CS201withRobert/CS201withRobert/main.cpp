@@ -4,6 +4,7 @@
 //Final Project for CS201 spring
 
 #include"readFile.h"
+#include"encryption.h"
 
 #include<iostream>
 using std::cin;
@@ -15,16 +16,6 @@ using std::map;
 using std::string;
 
 
-void charCount(string text, map<char, int> & keys) {
-	for (auto &val : keys) {
-		for (auto let : text) {
-			if (let == val.first || let+32 == val.first) {
-				val.second++;
-			}
-		}
-	}
-}
-
 map<char, int> key;
 
 int main() {
@@ -32,7 +23,6 @@ int main() {
 		char temp = 'a' + i;
 		key[temp] = 0;
 	}
-
 	charCount("This is some text.", key);
 
 	for (auto val : key) {

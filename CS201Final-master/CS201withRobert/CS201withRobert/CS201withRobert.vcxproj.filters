@@ -21,9 +21,15 @@
     <ClCompile Include="readfile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="encyption.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="readFile.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="encryption.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
   </ItemGroup>
