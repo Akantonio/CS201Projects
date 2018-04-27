@@ -2,11 +2,9 @@
 #define ENCRYPTION_H
 
 #include<map>
-using std::map;
 #include<string>
-using std::string;
 
-void charCount(string text, map<char, int> & keys);
+void charCount(std::string text, std::map<char, int> & keys);
 
 #endif // !ENCRYPTION_H
 

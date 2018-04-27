@@ -3,8 +3,8 @@
 //4/16/2018
 //Final Project for CS201 spring
 
-#include"readFile.h"
-#include"encryption.h"
+#include"readfile.h"
+#include"decrypt.h"
 
 #include<iostream>
 using std::cin;
@@ -16,20 +16,10 @@ using std::map;
 using std::string;
 
 
-map<char, int> key;
-
 int main() {
-	for (int i = 0; i < 26; i++) {
-		char temp = 'a' + i;
-		key[temp] = 0;
-	}
-	charCount(decFile("crypto"), key);
 
-	for (auto val : key) {
-		cout << val.first << " " << key[val.first] << endl;
-	}
-	writeOnFile("test", "Line.");
-	decFile("test");
+	decrypt("crypto");
+
 	while (cin.get() != '\n');
 	return 0;
 }
