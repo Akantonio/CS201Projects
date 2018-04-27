@@ -24,6 +24,8 @@ void decrypt(string s) {
 	//makes a string so decFile only has to be called once
 	string activeFile = decFile(s);
 
+
+
 	charCount(activeFile, key);
 
 	//Testing to make sure charCount works.
@@ -96,10 +98,11 @@ void decrypt(string s) {
 	}
 
 	for (char & c : activeFile) {
+		if (c > 65 && c < 90) {
+			c = c + 32;
+		}
 		c = swapKey[c];
 	}
-
-	cout << activeFile;
 
 	writeOnFile(s+"Decrypt", activeFile);
 
