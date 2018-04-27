@@ -115,13 +115,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="encyption.cpp" />
+    <ClCompile Include="decrypt.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="readfile.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="encryption.h" />
-    <ClInclude Include="readFile.h" />
+    <ClInclude Include="decrypt.h" />
+    <ClInclude Include="readfile.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

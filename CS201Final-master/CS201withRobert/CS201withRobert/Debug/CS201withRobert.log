@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿  encyption.cpp
 c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\xutility(3929): error C2825: '_Urng': must be a class or namespace when followed by '::'
   c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\algorithm(1867): note: see reference to class template instantiation 'std::_Rng_from_urng<int,_Urng0>' being compiled
@@ -14,3 +15,8 @@ c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.1
 c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\xutility(3931): error C2065: '_Ty1': undeclared identifier
 c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\xutility(3931): error C2065: '_Ty1': undeclared identifier
 c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\xutility(3931): error C2923: 'std::conditional_t': '_Ty1' is not a valid template type argument for parameter '_Ty2'
+=======
+﻿  decrypt.cpp
+c:\users\robert shidner\documents\github\cs201projects\cs201final-master\cs201withrobert\cs201withrobert\decrypt.cpp(44): warning C4018: '<': signed/unsigned mismatch
+  CS201withRobert.vcxproj -> C:\Users\Robert Shidner\Documents\GitHub\CS201Projects\CS201Final-master\CS201withRobert\Debug\CS201withRobert.exe
+>>>>>>> 1eb4cedc83356378a474b1a9040e5a9a07b6ddfb
