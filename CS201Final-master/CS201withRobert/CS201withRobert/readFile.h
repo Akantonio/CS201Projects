@@ -12,7 +12,7 @@ using std::getline;
 #include<sstream>
 using std::istringstream;
 
-void writeOnFile(string s);
+void writeOnFile(string s, string line);
 string decFile(string s);
 
 #endif // !READFILE_H

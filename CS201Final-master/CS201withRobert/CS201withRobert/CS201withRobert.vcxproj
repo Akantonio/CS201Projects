@@ -115,11 +115,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="decrypt.cpp" />
     <ClCompile Include="encyption.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="readfile.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="decrypt.h" />
     <ClInclude Include="encryption.h" />
     <ClInclude Include="readFile.h" />
   </ItemGroup>

@@ -9,4 +9,4 @@ using std::string;
 void charCount(string text, map<char, int> & keys);
 
 #endif // !ENCRYPTION_H
-#pragma once
+

@@ -28,7 +28,8 @@ int main() {
 	for (auto val : key) {
 		cout << val.first << " " << key[val.first] << endl;
 	}
-	decFile("example");
+	writeOnFile("test", "Line.");
+	decFile("test");
 	while (cin.get() != '\n');
 	return 0;
 }

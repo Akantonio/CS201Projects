@@ -7,14 +7,12 @@
 #include"encryption.h"
 
 
-void writeOnFile(string s) {
-	string text;
-
+void writeOnFile(string s, string line) {
 	ofstream myfile(s+".txt");//opens a text file called <s>
 
 	if (myfile.is_open()) {//opens the file and checks if its open
 
-		myfile << "This is a line.\n";//outputs the string to the file
+		myfile << line;//outputs the string to the file
 		myfile.close();
 		cout << "Success!";
 	}
@@ -31,7 +29,7 @@ string decFile(string s) {
 		while (getline(myfile, line)) {
 			read += line+"\n"; //Adds the next line into the string
 		}
-		cout << read << '\n';//checking to make sure it works
+		//cout << read << '\n'; checking to make sure it works
 		cout << "Success!";
 	}
 	else {
