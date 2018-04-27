@@ -29,6 +29,8 @@ int main() {
 		cout << val.first << " " << key[val.first] << endl;
 	}
 	decFile();
+	encryption test;
+	test.encrypting();
 	while (cin.get() != '\n');
 	return 0;
 }
