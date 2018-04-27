@@ -9,10 +9,24 @@
 #include<iostream>
 using std::cout;
 using std::endl; 
+#include <vector>
+using std::vector;
 #include <map>
 using std::map;
 #include <string>
 using std::string;
+
+map<char,char> createSwapKey(map<int, char> key) {
+	vector <char> freq{ 'e','t','a','o','i','n','s','h','r','d','l','c','u','m','w','f','g','y','p','b','v','k','j','x','q','z' };
+	
+	map<char, char> temp;
+
+	for (int i = 0; i < 26; i++) {
+		temp[key[i]] = freq.at(i);
+	}
+
+	return temp;
+}
 
 void decrypt(string s) {
 	//creating the key
@@ -60,7 +74,7 @@ void decrypt(string s) {
 	}
 
 	//creates the swapKey
-	map<char, char> swapKey = {
+	/*map<char, char> swapKey = {
 		{orderedKey[0], 'e'},
 	{orderedKey[1],'t'},
 	{orderedKey[2],'a'},
@@ -88,7 +102,9 @@ void decrypt(string s) {
 	{orderedKey[24],'q'},
 	{orderedKey[25],'z'}
 
-	};
+	};*/
+
+	map<char, char> swapKey = createSwapKey(orderedKey);
 
 	//checks to makes sure the swapKey worked
 	for (auto val : swapKey) {
