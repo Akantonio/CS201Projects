@@ -27,8 +27,6 @@ void encryption::encrypting(string s) {
 	}
 	mt19937 myrandom(907);
 	shuffle(begin(_letters), end(_letters), myrandom);
-	for (auto i = 0; i <26; ++i) {
-	}
 	map<char, char> key;
 	for (int i = 0; i < 25;++i) {
 		key[i + 97] = (char)(97 + _letters.at(i));
