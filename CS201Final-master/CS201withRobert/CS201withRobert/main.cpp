@@ -23,7 +23,7 @@ int main() {
 		char temp = 'a' + i;
 		key[temp] = 0;
 	}
-	charCount("This is some text.", key);
+	charCount(decFile(), key);
 
 	for (auto val : key) {
 		cout << val.first << " " << key[val.first] << endl;

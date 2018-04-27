@@ -23,7 +23,7 @@ void writeOnFile(string s) {
 	}
 }
 
-void decFile() {
+string decFile() {
 	string line;
 	string read;
 	ifstream myfile("example.txt");
@@ -37,4 +37,5 @@ void decFile() {
 	else {
 		cout << "Unable to open file";
 	}
+	return read;
 }
