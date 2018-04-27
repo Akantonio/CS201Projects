@@ -23,12 +23,12 @@ int main() {
 		char temp = 'a' + i;
 		key[temp] = 0;
 	}
-	charCount(decFile(), key);
+	charCount(decFile("crypto"), key);
 
 	for (auto val : key) {
 		cout << val.first << " " << key[val.first] << endl;
 	}
-	decFile();
+	decFile("example");
 	while (cin.get() != '\n');
 	return 0;
 }

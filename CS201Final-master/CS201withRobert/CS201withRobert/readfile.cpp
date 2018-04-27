@@ -23,10 +23,10 @@ void writeOnFile(string s) {
 	}
 }
 
-string decFile() {
+string decFile(string s) {
 	string line;
 	string read;
-	ifstream myfile("example.txt");
+	ifstream myfile(s+".txt");
 	if (myfile.is_open()) {
 		while (getline(myfile, line)) {
 			read += line+"\n"; //Adds the next line into the string

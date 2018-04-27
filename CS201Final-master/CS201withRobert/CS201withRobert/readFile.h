@@ -13,6 +13,6 @@ using std::getline;
 using std::istringstream;
 
 void writeOnFile(string s);
-string decFile();
+string decFile(string s);
 
 #endif // !READFILE_H
