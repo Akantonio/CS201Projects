@@ -18,7 +18,7 @@ using std::string;
 
 int main() {
 
-	decrypt("crypto");
+	decrypt("letter");
 
 	while (cin.get() != '\n');
 	return 0;

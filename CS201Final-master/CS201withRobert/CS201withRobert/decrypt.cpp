@@ -95,5 +95,12 @@ void decrypt(string s) {
 		cout << val.first << " " << val.second << endl;
 	}
 
+	for (char & c : activeFile) {
+		c = swapKey[c];
+	}
+
+	cout << activeFile;
+
+	writeOnFile(s+"Decrypt", activeFile);
 
 }
