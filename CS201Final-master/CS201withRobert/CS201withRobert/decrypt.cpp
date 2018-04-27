@@ -25,8 +25,29 @@ void decrypt(string s) {
 	charCount(activeFile, key);
 
 
-	for (auto val : key) {
+	for (const auto val : key) {
 		cout << val.first << " " << key[val.first] << endl;
 	}
 
+	map<char, int> keyCopy = key;
+
+	map<int, char> orderedKey;
+	for (int i = 0; i < 26; i++) {
+		orderedKey[i] = 'a';
+	}
+	for (int i = 0; i < key.size(); i++) {
+		char letter;
+		int max = 0;
+		for (auto & val : keyCopy) {
+			if (val.second > max) {
+				max = val.second;
+				letter = val.first;
+			}
+		}
+		orderedKey[i] = letter;
+		keyCopy[letter] = 0;
+	}
+	for (auto val : orderedKey) {
+		cout << val.first << " " << val.second << endl;
+	}
 }
