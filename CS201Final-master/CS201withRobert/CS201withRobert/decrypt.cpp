@@ -112,10 +112,10 @@ void decrypt(string s) {
 	}
 
 	for (char & c : activeFile) {
-		if (c > 65 && c < 90) {
+		if (c >= 65 && c <= 90) {
 			c = c + 32;
 		}
-		if (c > 97 && c < 122) {
+		if (c >= 97 && c <= 122) {
 			c = swapKey[c];
 		}
 	}

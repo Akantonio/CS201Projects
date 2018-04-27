@@ -1,23 +1,6 @@
-<<<<<<< HEAD
 ﻿  encyption.cpp
-c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\xutility(3929): error C2825: '_Urng': must be a class or namespace when followed by '::'
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\algorithm(1867): note: see reference to class template instantiation 'std::_Rng_from_urng<int,_Urng0>' being compiled
-  c:\users\adrian antonio\documents\cs201projects\cs201final-master\cs201withrobert\cs201withrobert\encyption.cpp(21): note: see reference to function template instantiation 'void std::shuffle<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,int>(_RanIt,_RanIt,_Urng &&)' being compiled
-          with
-          [
-              _Ty=int,
-              _RanIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>,
-              _Urng=int
-          ]
-c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\xutility(3929): error C2510: '_Urng': left of '::' must be a class/struct/union
-c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\xutility(3929): error C2061: syntax error: identifier 'result_type'
-c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\xutility(3929): error C2238: unexpected token(s) preceding ';'
-c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\xutility(3931): error C2065: '_Ty1': undeclared identifier
-c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\xutility(3931): error C2065: '_Ty1': undeclared identifier
-c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\xutility(3931): error C2923: 'std::conditional_t': '_Ty1' is not a valid template type argument for parameter '_Ty2'
-=======
-﻿  decrypt.cpp
-c:\users\robert shidner\documents\github\cs201projects\cs201final-master\cs201withrobert\cs201withrobert\decrypt.cpp(58): warning C4018: '<': signed/unsigned mismatch
-  LINK : C:\Users\Robert Shidner\Documents\GitHub\CS201Projects\CS201Final-master\CS201withRobert\Debug\CS201withRobert.exe not found or not built by the last incremental link; performing full link
+  Generating Code...
+  Compiling...
+  main.cpp
+  Generating Code...
   CS201withRobert.vcxproj -> C:\Users\Robert Shidner\Documents\GitHub\CS201Projects\CS201Final-master\CS201withRobert\Debug\CS201withRobert.exe
->>>>>>> 1eb4cedc83356378a474b1a9040e5a9a07b6ddfb
