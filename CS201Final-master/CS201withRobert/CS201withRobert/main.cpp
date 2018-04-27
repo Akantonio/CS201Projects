@@ -15,15 +15,69 @@ using std::endl;
 using std::map;
 #include <string>
 using std::string;
+#include<sstream>
+using std::istringstream;
 
+int intReturn() {
+	while (true) {
+		string line;
+		getline(cin, line);
+
+		istringstream instream(line);
+		int num;
+		instream >> num;
+		if (instream) {
+			return num;
+		}
+		else {
+			cout << "Please enter an integer" << endl;
+		}
+	}
+}
 
 int main() {
 
-	encryption test;
-	test.encrypting("letter");
+	cout << "Decryption Algorithm" << endl << endl;
 
-	decrypt("letter");
+	while (true) {
+		int choice;
+		encryption test;
+		string line1;
+		string line3;
 
-	while (cin.get() != '\n');
-	return 0;
+		cout << "1 Encrypt a file" << endl;
+		cout << "2 Attempt to decrypt a file" << endl;
+		cout << "3 Quit" << endl << endl;
+		cout << "Choice: ";
+		choice = intReturn();
+		cout << endl;
+	
+		switch (choice) {
+		case 1:
+			//This takes a key and a value, then, if the set is empty adds the key and value
+			//or, if the data set has values in it, it checks the key against them and either
+			//creates a new key, or replaces the value of the old key.
+			cout << "Enter the name of file to be encrypted (without file ending): ";
+			getline(cin, line1);
+			test.encrypting(line1);
+			cout << line1 << "Encrypt.txt was created." << endl;
+			break;
+		case 2:
+			//This takes a key, then, if the set is empty, returns the key was not found, or
+			//checks against all the keys in the data set and either returns the value, or if
+			//it isn't in there, returns the key was not found.
+			cout << "Enter the name of file to be decrypted (without file ending): ";
+			getline(cin, line3);
+			decrypt(line3);
+			cout << line3 << "Decrypt.txt was created." << endl;
+			break;
+		case 3:
+			//This just ends the program.
+			cout << "Exiting program";
+			return 0;
+		default:
+			cout << "Please enter a proper menu item." << endl << endl;
+			break;
+		}
+	}
 }

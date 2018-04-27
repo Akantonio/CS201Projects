@@ -116,7 +116,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="decrypt.cpp" />
-    <ClCompile Include="encyption.cpp" />
+    <ClCompile Include="encryption.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="readfile.cpp" />
   </ItemGroup>
