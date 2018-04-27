@@ -1,2 +1,6 @@
-﻿  main.cpp
+﻿  readfile.cpp
+  main.cpp
+  decrypt.cpp
+c:\users\robert shidner\documents\github\cs201projects\cs201final-master\cs201withrobert\cs201withrobert\decrypt.cpp(62): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
   CS201withRobert.vcxproj -> C:\Users\Robert Shidner\Documents\GitHub\CS201Projects\CS201Final-master\CS201withRobert\Debug\CS201withRobert.exe

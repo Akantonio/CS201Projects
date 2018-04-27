@@ -54,13 +54,10 @@ int main() {
 	
 		switch (choice) {
 		case 1:
-			//This takes a key and a value, then, if the set is empty adds the key and value
-			//or, if the data set has values in it, it checks the key against them and either
-			//creates a new key, or replaces the value of the old key.
+			//
 			cout << "Enter the name of file to be encrypted (without file ending): ";
 			getline(cin, line1);
 			test.encrypting(line1);
-			cout << line1 << "Encrypt.txt was created." << endl;
 			break;
 		case 2:
 			//This takes a key, then, if the set is empty, returns the key was not found, or
@@ -69,7 +66,6 @@ int main() {
 			cout << "Enter the name of file to be decrypted (without file ending): ";
 			getline(cin, line3);
 			decrypt(line3);
-			cout << line3 << "Decrypt.txt was created." << endl;
 			break;
 		case 3:
 			//This just ends the program.

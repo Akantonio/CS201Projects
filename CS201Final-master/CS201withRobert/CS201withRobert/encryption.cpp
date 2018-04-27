@@ -26,9 +26,8 @@ void encryption::encrypting(string s) {
 		_letters.push_back(i);
 	}
 	mt19937 myrandom(907);
-	shuffle(begin(_letters), end(_letters), myrandom); //THIS DOESN'T WORK
+	shuffle(begin(_letters), end(_letters), myrandom);
 	for (auto i = 0; i <26; ++i) {
-		cout << _letters.at(i) << " ";
 	}
 	map<char, char> key;
 	for (int i = 0; i < 25;++i) {
@@ -36,6 +35,10 @@ void encryption::encrypting(string s) {
 	}
 
 	string activeFile = decFile(s);
+
+	if (activeFile == "\0") {
+		return;
+	}
 
 	for (char & c : activeFile) {
 		if (c >= 65 && c <= 90) {

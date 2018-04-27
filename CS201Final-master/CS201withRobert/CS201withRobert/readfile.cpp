@@ -26,7 +26,7 @@ void writeOnFile(string s, string line) {
 
 		myfile << line;//outputs the string to the file
 		myfile.close();
-		cout << "Success!";
+		cout << s + ".txt was created sucessfully." << endl;
 	}
 	else {
 		cout << "Unable to open file";
@@ -41,11 +41,10 @@ string decFile(string s) {
 		while (getline(myfile, line)) {
 			read += line+"\n"; //Adds the next line into the string
 		}
-		//cout << read << '\n'; checking to make sure it works
-		cout << "Success!" << endl;
 	}
 	else {
-		cout << "Unable to open file";
+		cout << "Unable to open file" << endl;
+		return "\0";
 	}
 	return read;
 }

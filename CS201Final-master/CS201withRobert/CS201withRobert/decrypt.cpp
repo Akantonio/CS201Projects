@@ -38,12 +38,11 @@ void decrypt(string s) {
 	//makes a string so decFile only has to be called once
 	string activeFile = decFile(s);
 
-	charCount(activeFile, key);
-
-	//Testing to make sure charCount works.
-	for (const auto val : key) {
-		cout << val.first << " " << key[val.first] << endl;
+	if (activeFile == "\0") {
+		return;
 	}
+
+	charCount(activeFile, key);
 
 	//creates a second key to be modified.
 	map<char, int> keyCopy = key;
@@ -68,48 +67,7 @@ void decrypt(string s) {
 		keyCopy[letter] = 0;
 	}
 
-	//checks to make sure that ordering keys works.
-	for (auto val : orderedKey) {
-		cout << val.first << " " << val.second << endl;
-	}
-
-	//creates the swapKey
-	/*map<char, char> swapKey = {
-		{orderedKey[0], 'e'},
-	{orderedKey[1],'t'},
-	{orderedKey[2],'a'},
-	{orderedKey[3],'o'},
-	{orderedKey[4],'i'},
-	{orderedKey[5],'n'},
-	{orderedKey[6],'s'},
-	{orderedKey[7],'h'},
-	{orderedKey[8],'r'},
-	{orderedKey[9],'d'},
-	{orderedKey[10],'l'},
-	{orderedKey[11],'c'},
-	{orderedKey[12],'u'},
-	{orderedKey[13],'m'},
-	{orderedKey[14],'w'},
-	{orderedKey[15],'f'},
-	{orderedKey[16],'g'},
-	{orderedKey[17],'y'},
-	{orderedKey[18],'p'},
-	{orderedKey[19],'b'},
-	{orderedKey[20],'v'},
-	{orderedKey[21],'k'},
-	{orderedKey[22],'j'},
-	{orderedKey[23],'x'},
-	{orderedKey[24],'q'},
-	{orderedKey[25],'z'}
-
-	};*/
-
 	map<char, char> swapKey = createSwapKey(orderedKey);
-
-	//checks to makes sure the swapKey worked
-	for (auto val : swapKey) {
-		cout << val.first << " " << val.second << endl;
-	}
 
 	for (char & c : activeFile) {
 		if (c >= 65 && c <= 90) {
