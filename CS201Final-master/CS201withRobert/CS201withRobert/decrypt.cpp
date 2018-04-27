@@ -24,8 +24,6 @@ void decrypt(string s) {
 	//makes a string so decFile only has to be called once
 	string activeFile = decFile(s);
 
-
-
 	charCount(activeFile, key);
 
 	//Testing to make sure charCount works.
@@ -101,7 +99,9 @@ void decrypt(string s) {
 		if (c > 65 && c < 90) {
 			c = c + 32;
 		}
-		c = swapKey[c];
+		if (c > 97 && c < 122) {
+			c = swapKey[c];
+		}
 	}
 
 	writeOnFile(s+"Decrypt", activeFile);

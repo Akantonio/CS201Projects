@@ -41,7 +41,7 @@ string decFile(string s) {
 		while (getline(myfile, line)) {
 			read += line+"\n"; //Adds the next line into the string
 		}
-		//cout << read << '\n'; checking to make sure it works
+		cout << read << '\n'; //checking to make sure it works
 		cout << "Success!" << endl;
 	}
 	else {
