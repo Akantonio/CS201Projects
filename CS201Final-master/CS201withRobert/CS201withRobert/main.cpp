@@ -60,9 +60,7 @@ int main() {
 			test.encrypting(line1);
 			break;
 		case 2:
-			//This takes a key, then, if the set is empty, returns the key was not found, or
-			//checks against all the keys in the data set and either returns the value, or if
-			//it isn't in there, returns the key was not found.
+			//
 			cout << "Enter the name of file to be decrypted (without file ending): ";
 			getline(cin, line3);
 			decrypt(line3);
